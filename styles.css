@@ -1,0 +1,21 @@
+.row {
+    padding: 0 15px;
+}
+
+@media (min-width: 500px) {
+    .col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+body{ background-image: url(attack-titan-logo-png-download-free.png);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+
+#col1 {background-color: rgb(5, 53, 9);}
+#col2 {background-color: blue;}
+#col3 {background-color: beige;}
