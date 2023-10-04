@@ -1,75 +1,237 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Inbox(7)-ErinYeager@Aotmail.com</title>
+    <title>Inbox(5)-ErinYeager@Aotmail.com</title>
     <!-- I figured out how to change the icon in tab but need to figure out how to change size -->
-    <!-- Also switch image to free no copy right version from icons8 search titan and logo will appear -->
-    <link rel="icon" href="attack-titan-logo-png-download-free.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="attack-titan-logo-png-download-free.png">
+    <!-- My Tab icon was originally working but for some reason the tab is no longer working -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</head>
+
+<body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">ErenYeagor@AOTmail.com</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Help</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Settings
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <a class="navbar-brand" href="#">ErenYeagor@AOTmail.com</a>
+            <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Help</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Settings
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Hidden messages</a></li>
+                            <li><a class="dropdown-item" href="#">Change language</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Change theme</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Link</a>
+                    </li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Link</a>
-              </li>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 search-input" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="email-columns">
+        <!-- 1st col -->
+        <div class="email-column">
+            <h2>Click the button</h2>
+            <box-icon name='inbox' type='solid'></box-icon>
+            <br>
+            <box-icon name='star'></box-icon>
+            <br>
+            <box-icon name='alarm-snooze'></box-icon>
+            <br>
+            <box-icon name='paper-plane'></box-icon>
+            <br>
+            <box-icon name='note'></box-icon>
+            <br>
+            <button class="btn btn-primary small-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
+                Click here for options
+            </button>
+            <!-- Offcanvas menu -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="menu">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <!-- Menu content here -->
+                    <ul class="list-group">
+                        <li class="list-group-item">Inbox <box-icon name='inbox' type='solid'></box-icon></li>
+                        <li class="list-group-item">Favorites <box-icon name='star'></box-icon></li>
+                        <li class="list-group-item">Snoozed <box-icon name='alarm-snooze'></box-icon></li>
+                        <li class="list-group-item">Sent <box-icon name='paper-plane'></box-icon></li>
+                        <li class="list-group-item">Drafts <box-icon name='note'></box-icon></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Send button or compose  remember to add a reply button later before turning in-->
+            <br>
+            <br>
+            <!-- To make my button work I had to use chat gtp for my compose button because I could not find one in bootstrap-->
+            <button class="btn btn-primary btn-sm compose-button" data-bs-toggle="modal"
+                data-bs-target="#composeModal">Compose <box-icon name='paper-plane' type='solid'></box-icon></button>
+
+            <!-- Add a hidden compose form in a modal -->
+            <div class="modal fade" id="composeModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Compose New Message</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Your compose form goes here -->
+                            <form>
+                                <!-- To, Subject, Message fields, etc. -->
+                                <div class="mb-3">
+                                    <label for="composeTo" class="form-label">To</label>
+                                    <input type="email" class="form-control" id="composeTo"
+                                        placeholder="Recipient's email">
+                                </div>
+                                <!-- Add more form fields as needed -->
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- second Column -->
+        <div class="email-column">
+            <h2>Inbox</h2>
+            <ul class="email-list">
+
+                <li class="email-list-item">
+                    <h3>Phillip Milton</h3>
+                    <p>From: PhillipMilton2@bayvalleytech.com</p>
+                    <div class="email-content">
+                        <p>Do what you gotta do bro. Protect the fam! Leave me out of it though cause im on your team.
+                            Also reply to Mikasa ;)</p>
+                    </div>
+                </li>
+
+                <li class="email-list-item selected-email">
+                    <h3>Mikasa Ackerman</h3>
+                    <p>From: MikasaAckerman@Aotmail.com</p>
+                    <div class="email-content">
+                        <p>Erin what are you doing? We need to talk!</p>
+                        <!-- I was unable to find the reply button on on bootstrap and I could not find any video tutorial so I just used one from Chat GTP  -->
+                        <button class="btn btn-primary btn-sm reply-button" data-bs-toggle="modal"
+                            data-bs-target="#replyModal">Reply <box-icon name='reply' type='solid'></box-icon></button>
+
+                        <!-- Add a hidden reply form in a modal -->
+                        <div class="modal fade" id="replyModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Reply to Message</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- Your reply form goes here -->
+                                        <form>
+                                            <!-- Form fields, textarea, etc. -->
+                                            <div class="mb-3">
+                                                <label for="replyMessage" class="form-label">Your Reply</label>
+                                                <textarea class="form-control" id="replyMessage" rows="4"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Send Reply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Again the reply button was not my design. I will look into it for future designs but that part of my code is not my work. -->
+                    </div>
+                </li>
+                <li class="email-list-item">
+                    <h3>Armin Arlet</h3>
+                    <p>From: ArminArlet@aotmail.com</p>
+                    <div class="email-content">
+                        <p>Here are the nine titans in case you forgot; the founding titan, the Armored titan, the
+                            attack titan, the cart titan, the colo...</p>
+                        <p>click for more</p>
+                    </div>
+                </li>
+
+                <li class="email-list-item">
+                    <h3>Levi Ackerman</h3>
+                    <p>From: LeviAckerman@aotmail.com</p>
+                    <div class="email-content">
+                        <p>Wait are you related to Zeke? You guys look like each other. Let me know when you have time
+                            to go over to...</p>
+                        <p>click for more</p>
+                    </div>
+                </li>
+
+
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
         </div>
-      </nav>
-    <!-- test -->
-    <div class="container text-center">
-        <div class="row">
-            <!-- 1st -->
-          
-          <div class="col" id="col1" >
-            
-            Column <br> Test
-            <div class="d-grid gap-2">
-                <button class="btn btn-primary" type="button">Button</button>
-                <button class="btn btn-primary" type="button">Button</button>
-              </div>
-          </div>
-          <!-- 2nd -->
-          <div class="col" id ="col2">
-            Column
-          </div>
-          <!-- 3rd -->
-          <div class="col" id="col3">
-            Column
-          </div>
+        <!--  My last column -->
+        <div class="email-column">
+            <h2>Account Erin Yeagor</h2>
+            <br>
+            <p>Calendar <box-icon name='calendar-exclamation'></box-icon></p>
+            <p>Keep <box-icon name='edit'></box-icon></p>
+            <p>Task <box-icon name='task'></box-icon></p>
+            <p>Contacts <box-icon name='contact' type='solid'></box-icon></p>
+            <br>
+            <br>
+            <p>______________</p>
+            <br>
+            <p>Get add ons <box-icon name='plus'></box-icon></p>
         </div>
-      </div>
-  </body>
+    </div>
+
+
+</body>
+
 </html>
